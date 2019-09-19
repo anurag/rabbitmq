@@ -9,6 +9,11 @@ services:
     value: rabbitmq
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
+  - key: RABBITMQ_NODENAME
+    fromService:
+      type: web
+      name: rabbitmq # same as the name defined above so it can refer to itself
+      property: host
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
