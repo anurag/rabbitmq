@@ -1,4 +1,7 @@
-FROM rabbitmq:3.7.17-management
+FROM rabbitmq:3.7.18-management
+
+ARG RABBITMQ_NODENAME
+ENV RABBITMQ_NODENAME=$RABBITMQ_NODENAME
 
 COPY rabbitmq.conf /etc/rabbitmq/
 
