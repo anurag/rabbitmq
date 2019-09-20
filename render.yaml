@@ -10,7 +10,7 @@ services:
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
   - key: RABBITMQ_USE_LONGNAME
-    value: true
+    value: false
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
