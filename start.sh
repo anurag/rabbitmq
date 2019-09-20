@@ -122,4 +122,4 @@ if [ "${RABBITMQ_VM_MEMORY_HIGH_WATERMARK:-}" ]; then
 fi
 
 # starts a rabbitmq node
-RABBITMQ_NODENAME=rabbit@${RENDER_SERVICE_NAME} rabbitmq-server
+RABBITMQ_NODENAME=rabbit@localhost rabbitmq-server
