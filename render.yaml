@@ -9,10 +9,6 @@ services:
     value: rabbitmq
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
-  - key: RABBITMQ_MNESIA_BASE
-    value: /var/lib/rabbitmq/mnesia
-  - key: RABBITMQ_MNESIA_DIR
-    value: /var/lib/rabbitmq/mnesia/data
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
