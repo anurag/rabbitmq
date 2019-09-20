@@ -12,4 +12,4 @@ services:
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
-    sizeGB: 10
+    sizeGB: 20
